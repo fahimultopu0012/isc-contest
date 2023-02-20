@@ -1,0 +1,13 @@
+{
+  "name": "UI design",
+  "scripts": {
+    "sass-dev": "sass --watch --update --style=expanded static/assets/scss:static/dist/css"
+  },
+  "devDependencies": {
+    "sass": "^1.57.1"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.0-alpha1"
+  }
+}
+

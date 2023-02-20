@@ -1,0 +1,52 @@
+@mixin transition($list) {
+	-webkit-transition: $list;
+	-moz-transition: $list;
+	-o-transition: $list;
+	transition: $list;
+}
+@mixin transform($property){
+	-ms-transform: $property;
+	-webkit-transform: $property;
+	transform: $property;
+}
+@mixin placeholder {
+	&::-webkit-input-placeholder {
+		@content
+	}
+	&:-moz-placeholder {
+		@content
+	}
+	&::-moz-placeholder {
+		@content
+	}
+	&:-ms-input-placeholder {
+		@content
+	}
+}
+
+@mixin animation($list){
+	-moz-animation: $list;
+	-webkit-animation: $list;
+	-o-animation:$list;
+	animation:$list;
+}
+@mixin animation-fill($property){
+	-moz-animation-fill-mode: $property;
+	-webkit-animation-fill-mode: $property;
+	-o-animation-fill-mode:$property;
+	animation-fill-mode:$property;
+}
+@mixin keyframes($name){
+	@-webkit-keyframes #{$name}{
+		@content
+	}
+	@-moz-keyframes #{$name}{
+		@content
+	}
+	@-o-keyframes #{$name}{
+		@content
+	}
+	@keyframes #{$name}{
+		@content
+	}
+}

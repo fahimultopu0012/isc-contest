@@ -1,0 +1,115 @@
+.banner{
+    max-width: 1920px;
+    // margin: auto;
+    background: url('../../../../images/banner-bg.png');
+    // background: url('../../../dist/images/about-bg.png');
+    // max-height: 560px;
+    // height: 560px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    .container{
+        max-width: 1200px;
+        margin: auto;
+        .row{
+            display: flex;
+            @media (max-width: 991px){
+                display: block;
+            }
+           
+          .banner-left-content{
+            flex-basis: 45%;
+            
+         
+            h1{
+               color: #fff;
+               font-size: 52px;
+               line-height: 62px;
+               font-weight: 500;
+               font-family: 'Titillium Web', sans-serif;
+               padding-top: 120px;
+               @media (max-width: 1024px){
+                font-size: 45px;
+               line-height: 56px;
+               padding-top: 80px;
+            }
+               @media (max-width: 767px){
+                font-size: 36px;
+               line-height: 48px;
+               padding-top: 60px;
+            }
+            }
+            p{
+                font-size: 18px;
+                line-height: 0px;
+                color: #fff;
+                margin-bottom: 7px;
+                margin: 30px 0;
+            }
+            .banner-btn{
+                font-size: 16px;
+                color: #fff;
+                background: #746dda;
+                line-height: 0;
+                padding: 20px 22px 20px 30px;
+                border-radius: 50px;
+                outline: 0;
+                border: 0;
+                cursor: pointer;
+                transition: 0.5s all ease-in-out;
+                &:hover{
+                    color: #9695a1;
+                }
+              
+                i{
+                    margin-left: 5px;
+                }
+            }
+            .indicator{
+                display: flex;
+                padding-top: 30px;
+                margin-left: 5px;
+                padding-bottom: 110px;
+                @media(max-width: 991px){
+                    padding-bottom: 60px;
+                }
+                cursor: pointer;
+                .line-1{
+                    background: #746dda;
+                    width: 24px;
+                    height: 4px;
+                    margin-right: 7px;
+                    border-radius: 5px;
+                    cursor: pointer;
+                }
+                .line-1:last-child{
+                    margin-right: 0;
+                }
+            }
+            
+          }
+          .banner-right-content{
+            flex-basis: 55%;
+             width: 650px;
+            height: 400px;
+            margin-top: 85px;
+            @media(max-width: 991px){
+                display: block;
+                width: auto;
+                height: auto;
+                margin-top: 20px;
+                padding-bottom: 60px;
+            }
+            
+            img{
+                
+                width: 100%;
+                height: 100%;
+                // margin-top: 85px;
+                // margin-left: 87px;
+            }
+          }
+        }
+    }
+}

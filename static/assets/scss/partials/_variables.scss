@@ -1,0 +1,29 @@
+/* ** Colors ** */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+$font_family: 'Lato', sans-serif;
+$primary : #c33234;
+$primary_dark : #c33234;
+
+
+$secondary: #fdc82e;
+
+$green : #00c077;
+
+$short-side-nav-hover-bg : #f5f5f5;
+
+$jr_bgcolor: #f8f9fa;
+
+$body_color: #333;
+
+/* ** Media Queries ** */
+$small_desktop: 1100px;
+$tablet: 		992px;
+$mobile: 		768px;
+$mobile_sm: 	480px;
+
+$breakpoints-max: (xl,1199px),(lg,991px),(md,767px),(sm,575px);
+$breakpoints-min: (sm,576px), (md,768px), (lg,992px), (xl,1200px);
+
+
+$jr_light_border_color: #f8f9fa;
+
